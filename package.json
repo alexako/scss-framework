@@ -1,0 +1,26 @@
+{
+  "name": "scss-framework",
+  "version": "1.0.0",
+  "description": "Scss framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marjoforcado/scss-framework.git"
+  },
+  "keywords": [
+    "Scss",
+    "Framework"
+  ],
+  "author": "Marjo Forcado <marjoforcado@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marjoforcado/scss-framework/issues"
+  },
+  "homepage": "https://github.com/marjoforcado/scss-framework#readme",
+  "devDependencies": {
+    "sass": "^1.15.1"
+  }
+}
