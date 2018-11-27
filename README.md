@@ -71,3 +71,17 @@ app-foo {
 >On the code above, the `app-text-white` is not part of the `app-foo` component, it is a global modifier. What it does is it modifies the text elements color to white. 
 
 Generally we apply single responsibility for all our classes. Always keep in mind that if a rules does not belong in its __default state__ it must fall under the __modified state__.
+
+### Inline styles
+>Sometimes creating a class just to handle a simple rule can we an overkill.
+>1. The is only specific to that element
+>1. It will take more effort finding the class name inside the file.
+>  
+>During these instances it may be better to just simple declare the style inline with the element. We usually do this when we need to adjust a position of an element.
+```
+<div class="app-foo">
+    <div class="app-foo__bar" style="margin-left: 20px;">
+        I need 20px margin-left
+    </div>
+</div>
+``` 
