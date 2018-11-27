@@ -47,3 +47,27 @@ __page-example.scss__ - example template for page.
 
 ### main.scss
 >The main.scss contains all our files besides our page files as explained previously. We include this file for every document of our application.
+
+## Coding style
+### File naming
+>Our file names must follow the **prefix-module** convention in order to make sure that our classes do not collide with our vendors. The value of our prefix must be the same with our app prefix and the value of our module must be the same with our block-element [See BEM documentation](http://getbem.com/).
+```
+// app-foo.scss - This is the file name.
+app-foo {
+    // style goes here..
+}
+```
+
+### BEM + Global Modifiers
+>Our codes must strictly follow the [BEM](http://getbem.com) standards for development it provides us with a clean and robust markup for our application. While BEM is good for structuring our application it lacks code reusability for this we use __global modifiers__.
+
+### Global Modifiers
+> A good example of global modifiers are [Bootstrap](https://getbootstrap.com/) classes where you can define the class names inside your element and it will apply the necesarry styling.
+```
+<div class="app-foo">
+    <p class="app-foo__text app-text-white">Foo bar</p>
+</div>
+```
+>On the code above, the `app-text-white` is not part of the `app-foo` component, it is a global modifier. What it does is it modifies the text elements color to white. 
+
+Generally we apply single responsibility for all our classes. Always keep in mind that if a rules does not belong in its __default state__ it must fall under the __modified state__.
